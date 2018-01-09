@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_view_pager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sport"
+    tools:context="com.xinshiyun.smarttvonline.activity.viewpager.ViewPagerActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_120"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/menu_home"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/btn_check_selector"
+            android:gravity="center"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:clickable="false"
+            android:text="首页"
+            android:button="@null"
+            android:focusable="true"
+            />
+
+        <CheckBox
+            android:id="@+id/menu_message"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/btn_check_selector"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:clickable="false"
+            android:text="消息"
+            android:button="@null"
+            android:focusable="true"
+            />
+
+        <CheckBox
+            android:id="@+id/menu_article"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/btn_check_selector"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:textColor="@color/colorWhite"
+            android:clickable="false"
+            android:text="文章"
+            android:button="@null"
+            android:focusable="true"
+            />
+
+        <CheckBox
+            android:id="@+id/menu_setting"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="@dimen/dp_120"
+            android:background="@drawable/btn_check_selector"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:clickable="false"
+            android:textColor="@color/colorWhite"
+            android:text="设置"
+            android:button="@null"
+            android:focusable="true"
+            />
+
+    </LinearLayout>
+
+
+    <com.xinshiyun.smarttvonline.widget.NoScrollViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_menu" />
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+   <!--这里的样式是有优先级的 第一个item的优先级最高 依次往下推-->
+   <!--选中且有焦点-->
+   <item android:drawable="@drawable/details_focus" android:state_checked="true" android:state_focused="true"/>
+   <!--没有选中但是有焦点-->
+   <!--<item android:drawable="@drawable/essentials_button_focus"  android:state_checked="false" android:state_focused="true"/>-->
+   <!--选中但没有焦点-->
+   <item android:drawable="@drawable/essentials_button_focus" android:state_checked="true"  android:state_focused="false"/>
+   <!--选中但没有焦点-->
+<!--   <item android:drawable="@drawable/button_focus" android:state_checked="false"  android:state_focused="false"/>-->
+   <!--其他-->
+   <item android:drawable="@color/transparent"/>
+</selector>

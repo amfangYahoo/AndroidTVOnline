@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dp_20"
+    android:clipChildren="false"
+    android:clipToPadding="false">
+
+    <com.xinshiyun.smarttvonline.widget.focus.MetroView
+        android:id="@+id/item1"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_100"
+        android:background="@drawable/manager_item_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@+id/item2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="test1"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_24" />
+
+    </com.xinshiyun.smarttvonline.widget.focus.MetroView>
+
+    <com.xinshiyun.smarttvonline.widget.focus.MetroView
+        android:id="@+id/item2"
+        android:layout_width="@dimen/dp_150"
+        android:layout_height="@dimen/dp_150"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_toEndOf="@id/item1"
+        android:layout_toRightOf="@+id/item1"
+        android:background="@drawable/manager_item_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@+id/item3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher" />
+
+    </com.xinshiyun.smarttvonline.widget.focus.MetroView>
+
+    <com.xinshiyun.smarttvonline.widget.focus.MetroView
+        android:id="@+id/item_right"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="@dimen/dp_50"
+        android:layout_marginRight="@dimen/dp_50"
+        android:background="@drawable/manager_item_bg"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:nextFocusRight="@+id/item3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="右侧按钮" />
+
+    </com.xinshiyun.smarttvonline.widget.focus.MetroView>
+
+
+</RelativeLayout>

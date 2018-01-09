@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xinshiyun.smarttvonline">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:name">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 关闭硬件加速视频无画面，单独开启视频activity -->
+        <activity
+            android:name=".activity.video.OnlineVideoActivity"
+            android:hardwareAccelerated="true" />
+        <activity android:name=".activity.recycler.HorizontalRecyclerViewActivity" />
+        <activity android:name=".activity.recycler.VerticalRecyclerViewActivity" />
+        <activity android:name=".activity.viewpager.ViewPagerActivity" />
+        <activity android:name=".activity.recycler.ListRecyclerViewActivity" />
+        <activity android:name=".activity.webview.WebViewActivity" />
+        <activity android:name=".activity.imageswitch.ImageSwitchActivity"></activity>
+    </application>
+
+</manifest>
