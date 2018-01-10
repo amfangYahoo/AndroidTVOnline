@@ -14,6 +14,9 @@ import com.xinshiyun.smarttvonline.activity.recycler.VerticalRecyclerViewActivit
 import com.xinshiyun.smarttvonline.activity.video.OnlineVideoActivity;
 import com.xinshiyun.smarttvonline.activity.viewpager.ViewPagerActivity;
 
+/**
+ * 首页
+ */
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -58,5 +61,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "点击了item8", Toast.LENGTH_SHORT).show();
                 break;
         }
+
+
+
     }
 }
